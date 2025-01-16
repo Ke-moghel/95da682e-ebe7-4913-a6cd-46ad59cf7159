@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="274" id="KGk-i7-Jjw" customClass="GlucodianTableViewCell" customModule="About_You" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="274"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="274"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eGO-g1-idi">
+                        <rect key="frame" x="15" y="116.5" width="44" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="chu-e2-yVC"/>
+                            <constraint firstAttribute="width" secondItem="eGO-g1-idi" secondAttribute="height" multiplier="1:1" id="k09-bh-OSq"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxp-kk-SUr">
+                        <rect key="frame" x="69" y="15" width="368" height="244"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dev manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTn-Mv-ZXg">
+                                <rect key="frame" x="0.0" y="226" width="91" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reenen du Plessis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tD-8w-1Ka">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qTn-Mv-ZXg" secondAttribute="bottom" id="PvL-hX-MWq"/>
+                            <constraint firstItem="qTn-Mv-ZXg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8tD-8w-1Ka" secondAttribute="bottom" id="atz-KX-844"/>
+                            <constraint firstItem="8tD-8w-1Ka" firstAttribute="leading" secondItem="Rxp-kk-SUr" secondAttribute="leading" id="fPa-RQ-CwR"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8tD-8w-1Ka" secondAttribute="trailing" id="hym-M7-PBW"/>
+                            <constraint firstItem="qTn-Mv-ZXg" firstAttribute="leading" secondItem="8tD-8w-1Ka" secondAttribute="leading" id="nJn-Nb-xoM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qTn-Mv-ZXg" secondAttribute="trailing" id="qyR-Ka-gcd"/>
+                            <constraint firstItem="8tD-8w-1Ka" firstAttribute="top" secondItem="Rxp-kk-SUr" secondAttribute="top" id="rHX-AB-GLf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eGO-g1-idi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4oB-2K-k6J"/>
+                    <constraint firstAttribute="trailing" secondItem="Rxp-kk-SUr" secondAttribute="trailing" constant="15" id="Mcp-ye-tM9"/>
+                    <constraint firstItem="Rxp-kk-SUr" firstAttribute="leading" secondItem="eGO-g1-idi" secondAttribute="trailing" constant="10" id="dwu-AO-d0X"/>
+                    <constraint firstAttribute="bottom" secondItem="Rxp-kk-SUr" secondAttribute="bottom" constant="15" id="gdY-Bo-tAI"/>
+                    <constraint firstItem="Rxp-kk-SUr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kZX-5X-MgR"/>
+                    <constraint firstItem="Rxp-kk-SUr" firstAttribute="centerY" secondItem="eGO-g1-idi" secondAttribute="centerY" id="tk8-Mw-9ge"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="8tD-8w-1Ka" id="uQq-bX-g8c"/>
+                <outlet property="profileImage" destination="eGO-g1-idi" id="9cu-Co-o0l"/>
+                <outlet property="roleLabel" destination="qTn-Mv-ZXg" id="ZCV-f0-EnR"/>
+            </connections>
+            <point key="canvasLocation" x="233.33333333333334" y="161.38392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
